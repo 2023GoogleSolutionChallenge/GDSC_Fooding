@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./assets/fooding_icon.png" />
-    <link rel="stylesheet" type="text/css" href="css/setting.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/pickup-select.css" />
+    <link rel="stylesheet" type="text/css" href="./css/setting.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pickup-select.css" />
     <title>Fooding!</title>
 </head>
 
@@ -34,10 +34,61 @@
         <div class="body">
             <div class="contents">
                 <div id="map"></div>
-                <div class="select-box">
+                <div class="pick-up" id="pick-up">
+                    <div class="pick-up-location-nearby">Pick-up Location Nearby</div>
+                    <div class="line-3"></div>
+                    <div class="pick-up-list">
+                        <div class="pick-up-list-cell" id="cell1">
+                            <div class="cell-info">
+                                <div class="place">1. Banam High School</div>
+                                <p class="lunch-boxes">
+                                    The Number Of Lunch Boxes Left : 28
+                                </p>
+                            </div>
+                            <button class="select-school" onclick="ondisplay()">Select</button>
+                        </div>
+                        <div class="pick-up-list-cell" id="cell2">
+                            <div class="cell-info">
+                                <div class="place">2. Myongji College</div>
+                                <p class="lunch-boxes">
+                                    The Number Of Lunch Boxes Left : 36
+                                </p>
+                            </div>
+                            <button class="select-school" onclick="ondisplay()">Select</button>
+                        </div>
+                        <div class="pick-up-list-cell" id="cell3">
+                            <div class="cell-info">
+                                <div class="place">3. Hongyeon Elementary School</div>
+                                <p class="lunch-boxes">
+                                    The Number Of Lunch Boxes Left : 9
+                                </p>
+                            </div>
+                            <button class="select-school" onclick="ondisplay()">Select</button>
+                        </div>
+                        <div class="pick-up-list-cell" id="cell4">
+                            <div class="cell-info">
+                                <div class="place">4. Chungam High School</div>
+                                <p class="lunch-boxes">
+                                    The Number Of Lunch Boxes Left : 11
+                                </p>
+                            </div>
+                            <button class="select-school" onclick="ondisplay()">Select</button>
+                        </div>
+                        <div class="pick-up-list-cell" id="cell5">
+                            <div class="cell-info">
+                                <div class="place">5. Inja Elementary School</div>
+                                <p class="lunch-boxes">
+                                    The Number Of Lunch Boxes Left : 7
+                                </p>
+                            </div>
+                            <button class="select-school" onclick="ondisplay()">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-box" id="select-box">
                     <div class="goto-back">
                         <img class="back-button" src="./assets/back-button@3x.png">
-                        <div class="back-to-list">Back To List</div>
+                        <button class="back-to-list" onclick="offdisplay()">Back To List</button>
                     </div>
                     <div class="school-name">1. Banam High School</div>
                     <div class="lunch-boxes-left">The Number of Lunch Boxes Left</div>
@@ -58,72 +109,81 @@
             </p>
         </div>
     </div>
-        <!-- javascript -->
-        <script>
-            function initMap() {
-                var myLocation = { lat: 37.541, lng: 127.001 }; // 현재 나의 위치를 서울의 위도 및 경도로 설정
-    
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 12,
-                    center: myLocation
+    <!-- javascript -->
+    <script>
+        function initMap() {
+            var myLocation = { lat: 37.541, lng: 127.001 }; // 현재 나의 위치를 서울의 위도 및 경도로 설정
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: myLocation
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                map: map,
+                title: 'My Location'
+            });
+
+            var school1Location = { lat: 37.548, lng: 126.981 };
+            var school2Location = { lat: 37.521, lng: 126.993 };
+
+            var schoolLocation = [school1Location, school2Location];
+
+            var school1Marker = new google.maps.Marker({
+                position: school1Location,
+                map: map,
+                title: 'School 1'
+            });
+
+            var school2Marker = new google.maps.Marker({
+                position: school2Location,
+                map: map,
+                title: 'School 2'
+            });
+
+            var directionsService = new google.maps.DirectionsService();
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+
+            for (var i = 1; i <= 2; i++) {
+                var request = {
+                    origin: myLocation,
+                    destination: schoolLocation[i],
+                    travelMode: 'DRIVING'
+                };
+
+                // directionsService.route(request, function (result, status) {
+                //     if (status == 'OK') {
+                //         directionsDisplay.setDirections(result);
+                //     } else {
+                //         window.alert("Directions request failed due to " + status);
+                //     }
+                // });
+
+                directionsService.route(request, function (result, status) {
+                    directionsDisplay.setDirections(result);
+                    console.log(result)
                 });
-    
-                var marker = new google.maps.Marker({
-                    position: myLocation,
-                    map: map,
-                    title: 'My Location'
-                });
-    
-                var school1Location = { lat: 37.548, lng: 126.981 };
-                var school2Location = { lat: 37.521, lng: 126.993 };
-    
-                var schoolLocation = [school1Location, school2Location];
-    
-                var school1Marker = new google.maps.Marker({
-                    position: school1Location,
-                    map: map,
-                    title: 'School 1'
-                });
-    
-                var school2Marker = new google.maps.Marker({
-                    position: school2Location,
-                    map: map,
-                    title: 'School 2'
-                });
-    
-                var directionsService = new google.maps.DirectionsService();
-                var directionsDisplay = new google.maps.DirectionsRenderer({
-                    map: map
-                });
-    
-                for (var i = 1; i <= 2; i++) {
-                    var request = {
-                        origin: myLocation,
-                        destination: schoolLocation[i],
-                        travelMode: 'DRIVING'
-                    };
-    
-                    // directionsService.route(request, function (result, status) {
-                    //     if (status == 'OK') {
-                    //         directionsDisplay.setDirections(result);
-                    //     } else {
-                    //         window.alert("Directions request failed due to " + status);
-                    //     }
-                    // });
-    
-                    directionsService.route(request, function (result, status) {
-                            directionsDisplay.setDirections(result);
-                            console.log(result)
-                    });
-    
-                    directionsDisplay.setMap(map);
-                }
+
+                directionsDisplay.setMap(map);
             }
-        </script>
-        <script async defer
+        }
+    // <!-- function -->
+        function ondisplay() {
+            document.getElementById("pick-up").style.display = "none";
+            document.getElementById("select-box").style.display = "block";
+        }
+        function offdisplay() {
+            document.getElementById("pick-up").style.display = "block";
+            document.getElementById("select-box").style.display = "none";
+        }
+    </script>
+    <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5vCqZWeiXaBL4vQZuIuGmwoJAuuqbNpI&callback=initMap">
-        </script>
-        <!-- javascript -->
+    </script>
+    <!-- javascript -->
 </body>
 
 </html>
