@@ -40,10 +40,6 @@
     margin-bottom:20px;
 }
 
-option{
-    color: var(--fooding-gray);
-    font-size: 16px;
-}
 
 .sign-up .sign-up-form input::placeholder{
     color: var(--fooding-gray);
