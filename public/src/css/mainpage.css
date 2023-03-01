@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700|Nanum+Gothic:400,700,800|Oleo+Script:400,700|Inter:700");
+.body {
+    width: 1440px;
+    height: 1024px;
+}
+
+.semibody{
+    width: 1440px;
+    height: 367px;
+}
+.img_in_semibody{
+    display: flex;
+    flex-direction: row;
+    height: 290px;
+}
+.img_hunger_1{
+    width: 212px;
+}
+.img_hunger_2{
+    width: 448px;
+}
+.img_hunger_3{
+    width: 330px;
+}
+.img_hunger_4{
+    width: 450px;
+}
+.textbox_in_semibody{
+    height: 77px;
+    background-color: var(--fooding-base4);
+}
+.slogan{
+    font-family: var(--font-family-oleo_script);
+    font-size: 32px;
+    color: rgba(49, 77, 90, 1);
+    text-align: end;
+    padding-top: 19px;
+}
+
+.coreblock{
+    height: 664px;
+}
+.checkoutcard{
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 120px;
+    margin-left: 142px;
+    width: 684px;
+    height: 424px;
+    overflow: hidden;
+
+}
+.map_image{
+    width: 385px;
+    height: 426px;
+    border: 40px;
+}
+.lineincard{
+    margin-left: 383px;
+    height: 424px;
+    width: 2px; 
+    background-color: var(--fooding-base2);
+}
