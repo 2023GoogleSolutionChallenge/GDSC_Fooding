@@ -19,6 +19,9 @@
       rgba(255, 146, 66, 1);
     --fooding-white:
       rgba(255, 255, 255, 1);
+    --fooding-gray:
+      rgba(49,100,118,0.4);
+      
   
     --font-family-arial-regular: "Arial-Regular";
     --font-family-inter: "Inter";
