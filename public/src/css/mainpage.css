@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700|Nanum+Gothic:400,700,800|Oleo+Script:400,700|Inter:700");
+.body {
+    width: 1440px;
+    height: 1024px;
+}
+
+.semibody{
+    width: 1440px;
+    height: 367px;
+}
+
+.img_in_semibody{
+    display: flex;
+    flex-direction: row;
+    height: 290px;
+}
+
+.img_hunger_1{
+    width: 212px;
+}
+
+.img_hunger_2{
+    width: 448px;
+}
+
+.img_hunger_3{
+    width: 330px;
+}
+
+.img_hunger_4{
+    width: 450px;
+}
+
+.textbox_in_semibody{
+    height: 77px;
+    background-color: var(--fooding-base4);
+}
+
+.slogan{
+    font-family: var(--font-family-oleo_script);
+    font-size: 32px;
+    color: rgba(49, 77, 90, 1);
+    text-align: end;
+    padding-top: 19px;
+}
+
+.coreblock{
+    height: 664px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkoutcard{
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 120px;
+    margin-left: 142px;
+    width: 684px;
+    height: 424px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkmyordercard{
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-top: 120px;
+    width: 448px;
+    height: 424px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.map_image{
+    width: 385px;
+    height: 426px;
+    border: 40px;
+}
+
+.lineincard{
+    /* margin-left: 383px; */
+    height: 424px;
+    width: 2px; 
+    background-color: var(--fooding-base2);
+}
+
+.rightside{
+    margin-top: 87px;
+    width: 301px;
+    color: var(--fooding-base3);
+    font-family: var(--font-family-nanum_gothic);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.describe1{
+    font-size: 20px;
+}
+
+.describe2{
+    font-size: 18px;
+}
+
+.describe3{
+    font-size: 18px;
+}
+
+.buttons{
+    margin-top: 37px;
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lunchbutton{
+    width: 252px;
+    color: var(--fooding-base3);
+    border-color: var(--fooding-base3);
+} 
+
+#lunchbutton:hover{
+    background-color: var(--fooding-base4);
+}
+
+#dinnerbutton{
+    width: 252px;
+    margin-top: 15px;
+    color: var(--fooding-base3);
+    border-color: var(--fooding-base3);
+} 
+
+#dinnerbutton:hover{
+    background-color: var(--fooding-base4);
+}
+
+.persongazelocation{
+    border-radius: 40px;
+    height: 80%;
+    width: 80%;
+    position:absolute; bottom:0;
+}
+
+.describe4{
+    font-size:60px;
+    width: 100px;
+    height: 45px;
+    position: absolute; right: 90px;
+    font-family: var(--font-family-nanum_gothic);
+    font-weight: bold;
+}
+
+.describe5{
+    font-size:60px;
+    width: 100px;
+    height: 45px;
+    position: absolute; top: 50px; right:90px;
+    font-family: var(--font-family-nanum_gothic);
+    font-weight: bold;
+}
+
+.describe6{
+    font-size:60px;
+    width: 100px;
+    height: 45px;
+    position: absolute; top: 100px; right:90px;
+    font-family: var(--font-family-nanum_gothic);
+    font-weight: bold;
+}
