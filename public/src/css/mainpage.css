@@ -8,27 +8,34 @@
     width: 1440px;
     height: 367px;
 }
+
 .img_in_semibody{
     display: flex;
     flex-direction: row;
     height: 290px;
 }
+
 .img_hunger_1{
     width: 212px;
 }
+
 .img_hunger_2{
     width: 448px;
 }
+
 .img_hunger_3{
     width: 330px;
 }
+
 .img_hunger_4{
     width: 450px;
 }
+
 .textbox_in_semibody{
     height: 77px;
     background-color: var(--fooding-base4);
 }
+
 .slogan{
     font-family: var(--font-family-oleo_script);
     font-size: 32px;
@@ -42,6 +49,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .checkoutcard{
     border: 2px solid black;
     border-radius: 40px;
@@ -53,6 +61,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .checkmyordercard{
     border: 2px solid black;
     border-radius: 40px;
@@ -68,12 +77,14 @@
     height: 426px;
     border: 40px;
 }
+
 .lineincard{
     /* margin-left: 383px; */
     height: 424px;
     width: 2px; 
     background-color: var(--fooding-base2);
 }
+
 .rightside{
     margin-top: 87px;
     width: 301px;
@@ -83,14 +94,19 @@
     text-align: center;
 
 }
+
 .describe1{
-    font-size: 20px;}
+    font-size: 20px;
+}
+
 .describe2{
     font-size: 18px;
 }
+
 .describe3{
     font-size: 18px;
 }
+
 .buttons{
     margin-top: 37px;
     font-size: 22px;
@@ -105,19 +121,21 @@
     color: var(--fooding-base3);
     border-color: var(--fooding-base3);
 } 
+
 #lunchbutton:hover{
     background-color: var(--fooding-base4);
 }
+
 #dinnerbutton{
     width: 252px;
     margin-top: 15px;
     color: var(--fooding-base3);
     border-color: var(--fooding-base3);
 } 
+
 #dinnerbutton:hover{
     background-color: var(--fooding-base4);
 }
-
 
 .persongazelocation{
     border-radius: 40px;
@@ -125,6 +143,7 @@
     width: 80%;
     position:absolute; bottom:0;
 }
+
 .describe4{
     font-size:60px;
     width: 100px;
@@ -133,6 +152,7 @@
     font-family: var(--font-family-nanum_gothic);
     font-weight: bold;
 }
+
 .describe5{
     font-size:60px;
     width: 100px;
@@ -141,6 +161,7 @@
     font-family: var(--font-family-nanum_gothic);
     font-weight: bold;
 }
+
 .describe6{
     font-size:60px;
     width: 100px;
