@@ -1,0 +1,33 @@
+.sign-up-completed {
+    width : 450px;
+    height : auto;
+    padding-top:200px;
+    margin : auto;
+}
+
+.sign-up-completed h1{
+    color: var(--fooding-base3);
+    font-family: var(--font-family-oleo_script_swash_caps);
+    font-size: 96px;
+    margin: auto;
+    width: 209px;
+    
+}
+
+.sign-up-completed h2{
+    color: var(--fooding-base3);
+    font-family: var(--font-family-oleo_script_swash_caps);
+    font-size: 64px;
+    margin: auto;
+    width:259px;
+}
+
+.sign-up-completed button{
+    width : 430px;
+    height : 50px;
+    border-radius : 8px;
+    background-color: var(--fooding-base3);
+    color:white;
+    margin-top:50px;
+    border: none;
+}

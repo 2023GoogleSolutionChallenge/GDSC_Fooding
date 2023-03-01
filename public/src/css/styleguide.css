@@ -9,6 +9,8 @@
       rgba(49, 100, 118, 1);
     --fooding-base4:
       rgba(102, 162, 191, 1);
+    --fooding-base4:
+      rgba(213, 226, 231, 1);
     --fooding-light1:
       rgba(161, 181, 188, 1);
     --fooding-red:
@@ -21,11 +23,16 @@
       rgba(255, 255, 255, 1);
     --fooding-blue:
       rgba(207, 224, 233, 1);
+    --fooding-gray:
+      rgba(49,100,118,0.4);
+
   
     --font-family-arial-regular: "Arial-Regular";
     --font-family-inter: "Inter";
     --font-family-nanum_gothic: "Nanum Gothic";
     --font-family-oleo_script_swash_caps: "Oleo Script Swash Caps";
+    --font-family-oleo_script: "Oleo Script";
+
     --font-family-open_sans: "Open Sans";
     --font-family-open_sans-regular: "Open Sans-Regular";
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+        <link href="./css/sign-up.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="./assets/fooding_icon.png" />
+        <link rel="stylesheet" type="text/css" href="./css/setting.css" />
+        <link rel="stylesheet" type="text/css" href="./css/styleguide.css" />
+
+    
+    </head>
+</head>
+<body>
+    <div class="sign-up">
+
+        <div class="sign-up-header">
+            <img class="fooding-icon" src="./assets/fooding_icon@3x.png">
+            <h1 class="title">Fooding!</h1>
+        </div>
+
+        <form class="sign-up-form">
+            <div class="email">
+                <div class="signUptext">Email</div>
+                <div><input type="email" id="signUpEmail" placeholder="Email" /></div>
+            </div>
+            
+            <div class="password">
+                <div class="signUptext">Password</div>
+                <div><input type="password" id="signUpPassword" placeholder="Password"/></div>
+            </div>
+
+            <div class="comfirm-password">
+                <div class="signUptext">Confirm Password</div>
+                <div><input type="password" id="confirmPassword" placeholder="Password" /></div>
+            </div>
+
+            <div class="Name">
+                <div class="signUptext">Name</div>
+                <div><input type="text" id="signUpName" placeholder="Ex) John Fitzberg" /></div>
+            </div>
+
+            <div class="row">
+                <div class="signUptext">Birth Date</div>
+                <div id="birth">
+                    <div class="col">
+                        <input type="text" class="form-control" id="birth-year" placeholder="yyyy">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" id="birth-month" placeholder="mm">
+                      </div>
+                      <div class="col">
+                          <input type="text" class="form-control" id="birth-date"placeholder="dd">
+                      </div>
+                </div>
+            </div>
+
+            <div class="Phone-number">
+                <div class="signUptext">Phone Number</div>
+                <div class="state">
+                    <select id="inputState" class="form-select">
+                      <option selected id="select-box">Country</option>
+                      <option>South Korea +82</option>
+                    </select>
+                  </div>
+                <div><input type="text" id="phone-number" placeholder="Ex) 010 - 6640 - 4235" /></div>
+            </div>
+
+              
+            <!-- form 태그 안에서 버튼은 default 인 submit 으로 하면, form 안에 있는 것들 제출하는 형식 / button 타입은 그냥 일반적인 버튼 -->
+            <button onclick="location.href='./sign-up-completed.html'" type="button" id="signUpButton">Sign Up</button>
+        </form>
+
+        
+
+        
+        
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
