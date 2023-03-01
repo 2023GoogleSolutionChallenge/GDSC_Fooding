@@ -1,0 +1,29 @@
+:root {
+    --black:
+      rgba(0, 0, 0, 1);
+    --fooding-base1:
+      rgba(27, 44, 53, 1);
+    --fooding-base2:
+      rgba(49, 77, 90, 1);
+    --fooding-base3:
+      rgba(49, 100, 118, 1);
+    --fooding-base4:
+      rgba(102, 162, 191, 1);
+    --fooding-light1:
+      rgba(161, 181, 188, 1);
+    --fooding-red:
+      rgba(217, 26, 52, 1);
+    --fooding-orange2:
+      rgba(243, 168, 113, 1);
+    --fooding-orange1:
+      rgba(255, 146, 66, 1);
+    --fooding-white:
+      rgba(255, 255, 255, 1);
+  
+    --font-family-arial-regular: "Arial-Regular";
+    --font-family-inter: "Inter";
+    --font-family-nanum_gothic: "Nanum Gothic";
+    --font-family-oleo_script_swash_caps: "Oleo Script Swash Caps";
+    --font-family-open_sans: "Open Sans";
+    --font-family-open_sans-regular: "Open Sans-Regular";
+}

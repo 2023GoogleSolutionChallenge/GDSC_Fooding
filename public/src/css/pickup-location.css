@@ -1,0 +1,19 @@
+.contents {
+    margin-top: 82px;
+    margin-left: 142px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+#map {
+    width: 684px;
+    height: 619px;
+    background-color: aquamarine;
+}
+
+.pick-up {
+    width: 402px;
+    height: 619px;
+    background-color: orange;
+}

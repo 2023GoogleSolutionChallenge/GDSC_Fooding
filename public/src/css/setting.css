@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700|Nanum+Gothic:400,700,800|Oleo+Script:400,700|Inter:700");
+
+
+body {
+    margin: 0;
+    overflow: scroll;
+    display: grid;
+    place-content: center;
+}
+
+.screen {
+    position: initial;
+    align-items: center;
+    background-color: var(--foodingwhite);
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: auto;
+}
+
+/* header */
+.header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 150px;
+}
+
+.title-frame {
+    display: flex;
+    flex-direction: row;
+    margin-top: 37px;
+    margin-left: 31px;
+    gap: 19px;
+}
+
+.fooding-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.title {
+    color: var(--fooding-base3);
+    font-family: var(--font-family-oleo_script_swash_caps);
+    font-size: 64px;
+    margin: 0px;
+}
+
+.category-frame {
+    display: flex;
+    flex-direction: row;
+    margin-top: 63px;
+    margin-left: 170px;
+    gap: 44px;
+}
+
+.category {
+    font-family: var(--font-family-nanum_gothic);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--fooding-base2);
+}
+
+.about-fooding {
+    width: 196px;
+    height: 32px;
+}
+
+.line-1 {
+    width: 1px;
+    height: 27px;
+    background-color: var(--fooding-base2);
+}
+
+.line-2 {
+    width: 1px;
+    height: 27px;
+    background-color: var(--fooding-base2);
+}
+
+.utility-frame {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin-top: 63px;
+    margin-left: 170px; 
+    gap: 36px;
+}
+
+.icon-bell {
+    width: 32px;
+    height: 33.68px;
+}
+
+.icon-mypage {
+    width: 35px;
+    height: 33.68px;
+}
+
+/* body */
+.body {
+    width: 1440px;
+    height: 774px;
+}
+/* 여기 수정해주기! */
+
+/* footer */
+.footer {
+    align-items: flex-end;
+    width: 1440px;
+    height: 100px;
+    background-color: var(--fooding-base3);
+}
+
+.copyright {
+    font-family: var(--font-family-nanum_gothic);
+    font-size: 16px;
+    color: var(--fooding-white);
+    margin-top: 29px;
+    margin-left: 148px;
+}
+
+
