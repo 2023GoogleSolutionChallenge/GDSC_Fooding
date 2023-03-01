@@ -36,47 +36,48 @@
                 <div id="map"></div>
                 <div class="pick-up">
                     <div class="pick-up-location-nearby">Pick-up Location Nearby</div>
+                    <div class="line-3"></div>
                     <div class="pick-up-list">
                         <div class="pick-up-list-cell" id="cell1">
                             <div class="cell-info">
-                                <div class="place1">1. Banam High School</div>
-                                <p class="lunch-boxes-left1">
+                                <div class="place">1. Banam High School</div>
+                                <p class="lunch-boxes-left">
                                     The Number Of Lunch Boxes Left : 28
                                 </p>
                             </div>
                             <div class="select-btn">Select</div>
                         </div>
-                        <div class="pick-up-list-cell" id="cell1">
+                        <div class="pick-up-list-cell" id="cell2">
                             <div class="cell-info">
-                                <div class="place1">2. Myongji College</div>
-                                <p class="lunch-boxes-left1">
+                                <div class="place">2. Myongji College</div>
+                                <p class="lunch-boxes-left">
                                     The Number Of Lunch Boxes Left : 36
                                 </p>
                             </div>
                             <div class="select-btn">Select</div>
                         </div>
-                        <div class="pick-up-list-cell" id="cell1">
+                        <div class="pick-up-list-cell" id="cell3">
                             <div class="cell-info">
-                                <div class="place1">3. Hongyeon Elementary School</div>
-                                <p class="lunch-boxes-left1">
+                                <div class="place">3. Hongyeon Elementary School</div>
+                                <p class="lunch-boxes-left">
                                     The Number Of Lunch Boxes Left : 9
                                 </p>
                             </div>
                             <div class="select-btn">Select</div>
                         </div>
-                        <div class="pick-up-list-cell" id="cell1">
+                        <div class="pick-up-list-cell" id="cell4">
                             <div class="cell-info">
-                                <div class="place1">4. Chungam High School</div>
-                                <p class="lunch-boxes-left1">
+                                <div class="place">4. Chungam High School</div>
+                                <p class="lunch-boxes-left">
                                     The Number Of Lunch Boxes Left : 11
                                 </p>
                             </div>
                             <div class="select-btn">Select</div>
                         </div>
-                        <div class="pick-up-list-cell" id="cell1">
+                        <div class="pick-up-list-cell" id="cell5">
                             <div class="cell-info">
-                                <div class="place1">5. Inja Elementary School</div>
-                                <p class="lunch-boxes-left1">
+                                <div class="place">5. Inja Elementary School</div>
+                                <p class="lunch-boxes-left">
                                     The Number Of Lunch Boxes Left : 7
                                 </p>
                             </div>
@@ -97,8 +98,7 @@
     <!-- index -->
     <script>
         function initMap() {
-            // var myLocation = { lat: 37.541, lng: 127.001 }; // 현재 나의 위치를 서울의 위도 및 경도로 설정
-            var myLocation = {lat: 139.69, lng: 35.69};
+            var myLocation = { lat: 37.541, lng: 127.001 }; // 현재 나의 위치를 서울의 위도 및 경도로 설정
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 12,
@@ -111,12 +111,8 @@
                 title: 'My Location'
             });
 
-
-            // var school1Location = { lat: 37.548, lng: 126.981 };
-            // var school2Location = { lat: 37.521, lng: 126.993 };
-            var school1Location = {lat: 139.50, lng: 35.72};
-            var school2Location = {lat: 139.57, lng: 35.63};
-
+            var school1Location = { lat: 37.548, lng: 126.981 };
+            var school2Location = { lat: 37.521, lng: 126.993 };
 
             var schoolLocation = [school1Location, school2Location];
 
