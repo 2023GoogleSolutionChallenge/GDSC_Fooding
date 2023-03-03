@@ -1,0 +1,96 @@
+.body{
+    font: var(--font-family-nanum_gothic);
+}
+
+.body-1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 69px;
+    margin-bottom: 44px;
+    font-weight: bold;
+    
+}
+
+.body-2{
+    width:1440px;
+    height:150px;
+    background-color: var(--fooding-base4);
+    text-align:center;
+}
+
+.body-2 .user-name{
+    font-weight: 1000;
+    padding-top: 26px;
+    padding-bottom:7px;
+    font-size:28px;
+}
+
+.body-2 .user-phone{
+    font-size:16px;
+    padding-bottom:17px;
+}
+
+.body-2 .authorized-check{
+    background-color: rgb(102,162,191);
+    color:var(--fooding-white);
+    display:flex;
+    flex-direction: row;
+    font-size:10px;
+    width: 120px;
+    height: 20px;
+    border-radius: 10px;
+    margin:auto;
+    align-items: center;
+}
+
+.authorized-check .authorized-text{
+    font-size:12px;
+    margin-left:12px;
+    margin-right:5px;
+}
+
+.authorized-check .authorized-icon{
+    width:10px;
+    height:12px;
+}
+
+.body-3{
+    padding-top:40px;
+}
+
+.body-3 .line-first{
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.body-3 .order-history-text{
+    padding-top:12px;
+    padding-bottom:40px;
+
+}
+
+.body-3 .line-second{
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.body-3 .account-text{
+    padding-top:12px;
+    padding-bottom:24px;
+
+}
+
+.order-history, .payment-information{
+    font-size:28px;
+    font-weight: bold;
+}
+
+.order-history-text, .account-text, .recent-payment{
+    font-size:20px;
+}
+
+.body-3{
+    width:1156px;
+    height:auto;
+    margin:auto;
+}
