@@ -137,36 +137,21 @@
     background-color: var(--fooding-base4);
 }
 
+.check-index {
+    font-size: 32px;
+    width: 170x;
+    height: 48px;
+    margin-top: 60px;
+    margin-left: 270px;
+    font-family: var(--font-family-nanum_gothic);
+    font-weight: bold;
+}
+
 .persongazelocation{
     border-radius: 40px;
-    height: 80%;
-    width: 80%;
+    width: 403x;
+    height: 363px;
     position:absolute; bottom:0;
 }
 
-.describe4{
-    font-size:60px;
-    width: 100px;
-    height: 45px;
-    position: absolute; right: 90px;
-    font-family: var(--font-family-nanum_gothic);
-    font-weight: bold;
-}
 
-.describe5{
-    font-size:60px;
-    width: 100px;
-    height: 45px;
-    position: absolute; top: 50px; right:90px;
-    font-family: var(--font-family-nanum_gothic);
-    font-weight: bold;
-}
-
-.describe6{
-    font-size:60px;
-    width: 100px;
-    height: 45px;
-    position: absolute; top: 100px; right:90px;
-    font-family: var(--font-family-nanum_gothic);
-    font-weight: bold;
-}
