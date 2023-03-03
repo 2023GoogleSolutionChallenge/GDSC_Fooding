@@ -45,6 +45,7 @@ body {
     font-family: var(--font-family-oleo_script_swash_caps);
     font-size: 64px;
     margin: 0px;
+    cursor: pointer;
 }
 
 .category-frame {
@@ -96,6 +97,7 @@ body {
 .icon-mypage {
     width: 35px;
     height: 33.68px;
+    cursor: pointer;
 }
 
 /* body */
