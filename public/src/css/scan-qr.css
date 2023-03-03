@@ -1,0 +1,32 @@
+.body {
+    text-align: center;
+}
+
+.qr_image {
+    margin-top: 105px;
+    width: 445px;
+    height: 443px;
+}
+
+.home-button {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: solid var(--fooding-base2) 1px;
+    width: 271px;
+    height: 50px;
+    margin: 33px auto;
+    align-items: center;
+    background-color: var(--fooding-white);
+    font-family: var(--font-family-nanum_gothic);
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--fooding-base3);
+    padding-left: 45px;
+}
+
+.home-button:hover {
+    background-color: var(--fooding-base3);
+    color: var(--fooding-white);
+    cursor: pointer;
+}
