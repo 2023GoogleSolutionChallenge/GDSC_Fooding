@@ -1,4 +1,6 @@
-
+body {
+    text-align: center;
+}
 
 
 .sign-in {
@@ -54,7 +56,7 @@
 
 .sign-in .line{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 }
 
 .sign-in .sign-in-tail{
@@ -70,5 +72,15 @@
 .sign-in .sign-in-tail a{
     margin-left: 10px;
     color:var(--fooding-base3);
+}
+
+#guestButton {
+    width : 430px;
+    height : 50px;
+    border-radius : 8px;
+    background-color: var(--fooding-base5);
+    color:white;
+    margin-top:24px;
+    border: none;
 }
 

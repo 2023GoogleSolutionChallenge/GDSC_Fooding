@@ -30,4 +30,7 @@
     color:white;
     margin-top:50px;
     border: none;
+    font-family: var(--font-family-arial-regular);
+    font-size: 16px;
+    cursor: pointer;
 }
