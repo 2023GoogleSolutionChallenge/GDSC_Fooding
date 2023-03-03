@@ -2,7 +2,6 @@ body {
     text-align: center;
 }
 
-
 .sign-in {
     width : 450px;
     height : auto;
@@ -20,7 +19,6 @@ body {
     margin: auto;
 }
 
-
 .sign-in .sign-in-form {
     width :430px;
     height : auto;
@@ -36,12 +34,12 @@ body {
     border: 1px solid var(--fooding-gray);
     font-size : 16px;
     margin-bottom:20px;
+    padding-left:21px;
 }
 
 
 .sign-in .sign-in-form input::placeholder{
     color: var(--fooding-gray);
-    padding-left: 21px;
 }
 
 .sign-in .sign-in-form button{

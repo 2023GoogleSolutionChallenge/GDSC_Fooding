@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="./assets/fooding_icon.png" />
     <link rel="stylesheet" type="text/css" href="./css/setting.css" />
     <link rel="stylesheet" type="text/css" href="./css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/check-myorder.css" />
     <title>Fooding!</title>
 </head>
 
@@ -16,7 +17,7 @@
         <div class="header">
             <div class="title-frame">
                 <img class="fooding-icon" src="./assets/fooding_icon@3x.png">
-                <h1 class="title">Fooding!</h1>
+                <h1 class="title" type="button" onclick="location.href='./check-myorder.html'">Fooding!</h1>
             </div>
             <div class="category-frame">
                 <div class="about-fooding category">About Fooding</div>
@@ -27,11 +28,32 @@
             </div>
             <div class="utility-frame">
                 <img class="icon-bell" src="./assets/icon_bell@3x.png">
-                <img class="icon-mypage" src="./assets/icon_mypage@3x.png">
+                <img class="icon-mypage" type="button" onclick="location.href='./mypage.html'" src="./assets/icon_mypage@3x.png">
             </div>
         </div>
-        <div class="body">
-
+        <div class = "body">
+            <div class="semibody">
+                <div class = "img_in_semibody">
+                    <img class="img_hunger_1" src = "./assets/img4smbdy/img_hunger_1.png">
+                    <img class="img_hunger_2" src = "./assets/img4smbdy/img_hunger_2.png">
+                    <img class="img_hunger_3" src = "./assets/img4smbdy/img_hunger_3.png">
+                    <img class="img_hunger_4" src = "./assets/img4smbdy/img_hunger_4.png">
+                </div>
+                <div class = "textbox_in_semibody">
+                    <div class="slogan">Fooding will always take the lead in solving hunger problems.</div>
+                </div>
+            </div>
+            <div class="body-info">
+                <h1 class="main">Lunch box pick-up has been applied!</h1>
+                <h1 class="sub">Please go to<br>‘Banam High School’ by 13:00.</h1>
+            </div>
+            <div class="button-container">
+                <div class="user-qr" type="button" onclick="location.href='scan-qr.html'">
+                    <h1 class="qr-btn-name">Scan QR code for Pick Up</h1>
+                    <img class="qr-image" src="./assets/scan_qr@3x.png">
+                </div>
+                <div id="user-map"></div>
+            </div>
         </div>
         <div class="footer">
             <p class="copyright">
@@ -40,6 +62,46 @@
             </p>
         </div>
     </div>
+
+    <!-- javascript -->
+    <script>
+        function initMap() {
+        var myLocation = {lat: 37.7749, lng: -122.4194};
+        var schoolLocation = {lat: 37.7510, lng: -122.4357};
+        var map = new google.maps.Map(document.getElementById("user-map"), {
+          zoom: 10,
+          center: myLocation
+        });
+        var marker1 = new google.maps.Marker({
+          position: myLocation,
+          map: map,
+          title: "My Location"
+        });
+        var marker2 = new google.maps.Marker({
+          position: schoolLocation,
+          map: map,
+          title: "School Location"
+        });
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map
+        });
+        var directionsService = new google.maps.DirectionsService();
+        var request = {
+          origin: myLocation,
+          destination: schoolLocation,
+          travelMode: "DRIVING"
+        };
+        directionsService.route(request, function(result, status) {
+          if (status == "OK") {
+            directionsDisplay.setDirections(result);
+          }
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5vCqZWeiXaBL4vQZuIuGmwoJAuuqbNpI&callback=initMap">
+    </script>
+    <!-- javascript -->
 </body>
 
 </html>
