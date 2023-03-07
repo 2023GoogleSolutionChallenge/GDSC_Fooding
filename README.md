@@ -2,24 +2,27 @@
 
 # 🤍 2023 Google Solution Challenge 🤍
 
-> '양성기', 2023 Google Solution Challenge 팀 <br>
+> 'Fooding!', 2023 Google Solution Challenge 팀 <br>
 2023.02.04 - 2023.03.31
 
 <img width="928" alt="스크린샷 2023-02-04 오전 1 50 17" src="https://user-images.githubusercontent.com/45239582/216660417-e7e613cb-571f-4172-841d-ad9c77f29a09.png">
 
 ## 프로덕트 이름
-'양성기(양현준 배성호 정문기)' 'Yang Sung Gi'
+'Fooding!'
 
--> 프로덕트 썸네일 넣기!
+<img width="402" alt="image" src="https://user-images.githubusercontent.com/45239582/223442281-c4d5982a-c37a-481f-b6ae-1005b9c55b2b.png">
 
 <br>
 
-## 양성기의 목표
+## 우리 팀의 목표
 'Web'에 대해 무지한 감자 세 명의 구글 솔챌 도전기
+- 웹 개발 과정 공부하기
+- Firebase를 활용한 서버통신 및 배포
+- 'Google Map' API를 활용한 웹 구현
 
 <br>
 
-## 양성기의 핵심가치
+## Fooding!의 핵심가치
 Enjoy, think, solve
 - 스스로 결정하는 힘을 기를 수 있습니다.
 - 자기주도적인 회고를 활용할 수 있으면서도, 같이 고민하는 즐거움을 느낄 수 있습니다.
@@ -27,7 +30,7 @@ Enjoy, think, solve
 <br>
 
 ## 양성기의 궁극적인 목표
-풍요로운 선택지 속에서 진짜 내가 원하는 것을 발견할 수 있는, 스스로의 힘을 믿어주는 서비스가 되고자 합니다.
+전 지구적인 기아 문제를 해결하기 위해 끊임없이 노력하는 것
 
 <br>
 
