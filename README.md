@@ -78,7 +78,7 @@ Achieving the following UN SDGs through web service
 3. Implement 'Mainpage' screen UI
 
 ## Git Conventions
-[Our Convention Link](https://curvy-lungfish-93d.notion.site/Git-convention-0da3a2ee011a493aa9c3720bf7d11619)
+[-> Our Convention Link](https://curvy-lungfish-93d.notion.site/Git-convention-0da3a2ee011a493aa9c3720bf7d11619)
 
 <br>
 
