@@ -57,7 +57,7 @@ Achieving the following UN SDGs through web service
 | <img width="630" alt="스크린샷 2023-02-04 오전 1 40 56" src="https://user-images.githubusercontent.com/45239582/216658790-d6fe89aa-1e1c-4259-9347-636b7903676f.png"> | <img width="570" alt="스크린샷 2023-02-04 오전 1 45 15" src="https://user-images.githubusercontent.com/45239582/216659284-920ced87-47af-4a29-acf6-3b3a8ad6926d.png"> | <img width="600" alt="스크린샷 2023-02-04 오전 1 48 09" src="https://user-images.githubusercontent.com/45239582/216659918-5409c376-36af-47de-ad10-cb1d70eb27cb.png"> |
 
 
-## 개인 역할
+## Individual Role
 
 ### 🦦**성호**
 
@@ -82,7 +82,7 @@ Achieving the following UN SDGs through web service
 
 <br>
 
-## 실행결과 
+## Run screen
 <img width="726" alt="스크린샷 2023-03-31 오후 6 25 53" src="https://user-images.githubusercontent.com/45239582/229081762-9a7574bf-2e58-4bb5-86bb-945ae2aef732.png">
 
 ## 🗂 Foldering
