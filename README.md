@@ -25,10 +25,12 @@ https://fooding-da573.firebaseapp.com/
 
 ## Fooding!'s core value
 Achieving the following UN SDGs through web service
-2. Zero Hunger
-12. Responsible consumption and production 
 
-<strong> -> Always take the lead in solving hunger problems in whole world.</strong>
+(2) Zero Hunger
+
+(12) Responsible consumption and production 
+
+<strong> "Always take the lead in solving hunger problems in whole world."</strong>
 
 <br>
 
